@@ -1,6 +1,13 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  const reverse = word.split("").reverse().join("");
+  if (reverse === word)
+    return true;
+
+    return false;
+  }
+  // console.log(isPalindrome("racecar"));
+
 
 /* 
   Add your pseudocode here
@@ -8,6 +15,8 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
+  First we split the string and then reverse the individual characters then join them again.
+  Using the if statement we compare the reversed string and the initial string and return true if they match and false otherwise.
 */
 
 // You can run `node index.js` to view these console logs
